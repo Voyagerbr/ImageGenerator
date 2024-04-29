@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Image_Generator.MainPage"
+             Shell.NavBarIsVisible="false">
+
+     <ScrollView BackgroundColor="#babce0">
+        <StackLayout Orientation="Vertical"
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+           <Label Text="Olá, seja bem vindo(a) ao Gerador de Imagens"
+                   HorizontalOptions="Center"
+                   VerticalOptions="StartAndExpand"
+                   FontSize="22"
+                   FontAttributes="Bold"/>
+           <Button Text="Gerar"
+                   Clicked="GerarButtonIsClicked"
+                   HorizontalOptions="Center"
+                   BackgroundColor="Pink"
+                   CornerRadius="15"/>
+            <Frame CornerRadius="25"
+                    HeightRequest="250"
+                    BorderColor="Transparent">
+           <Image x:Name="imageMsg"
+                 Aspect="AspectFill"
+                 Source="vacalo.jpg"
+                 VerticalOptions="CenterAndExpand"/>     
+            </Frame>
+            <Button Text="COMPARTILHAR"
+                   Clicked="ShareButtonIsClicked"
+                   HorizontalOptions="Center"
+                   BackgroundColor="Pink"
+                   CornerRadius="15"/>           
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
